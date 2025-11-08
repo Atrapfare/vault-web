@@ -30,9 +30,7 @@ jobs:
 
           BRANCH_NAME=dependabot/directory-update
 
-          # Prüfen, ob Branch remote existiert
-          if git ls-remote --exit-code origin $BRANCH_NAME; then
-            git fetch origin $BRANCH_NAME
+          if git show-ref --verify --quiet refs/heads/$BRANCH_NAME; then
             git checkout $BRANCH_NAME
           else
             git checkout -b $BRANCH_NAME
@@ -41,7 +39,6 @@ jobs:
       - name: Commit changes if there are any
         run: |
           git add DIRECTORY.md
-          # commit only if there are changes
           if ! git diff --cached --quiet; then
             git commit -m "Update DIRECTORY.md"
           else
@@ -57,4 +54,3 @@ jobs:
           title: "Bump directory structure (auto-generated)"
           body: "This PR updates DIRECTORY.md automatically."
           draft: false
-          fail-on-empty-changes: false
