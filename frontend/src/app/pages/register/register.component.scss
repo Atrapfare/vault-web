@@ -20,7 +20,7 @@ input {
   background-color: var(--color-input-bg);
   color: var(--color-text-primary);
   border: 1px solid var(--color-input-border);
-  
+
   &:focus {
     border-color: var(--color-input-focus-border);
     outline: none;
@@ -30,11 +30,11 @@ input {
 
 button[type="submit"] {
   background-color: var(--color-primary);
-  
+
   &:hover:not(:disabled) {
     background-color: var(--color-primary-hover);
   }
-  
+
   &:disabled {
     opacity: 0.5;
     cursor: not-allowed;
@@ -47,7 +47,7 @@ button[type="submit"] {
 
 a {
   color: var(--color-primary);
-  
+
   &:hover {
     color: var(--color-primary-hover);
   }

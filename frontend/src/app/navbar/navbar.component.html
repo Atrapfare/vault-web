@@ -12,7 +12,7 @@
         <a routerLink="/cloud" class="navbar-link">Cloud</a>
         <a routerLink="/passwords" class="navbar-link">Password Manager</a>
         <a routerLink="/profile" class="navbar-link">Profile</a>
-        
+
         <!-- Theme Toggle Button -->
         <button
           (click)="toggleTheme()"
@@ -97,7 +97,7 @@
             <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
           </svg>
         </button>
-        
+
         <!-- Hamburger Menu -->
         <button
           (click)="toggleMobileMenu()"
@@ -121,14 +121,8 @@
   </div>
 
   <!-- Mobile Menu Overlay -->
-  <div
-    *ngIf="isMobileMenuOpen"
-    class="md:hidden mobile-menu px-4 pt-4"
-  >
-    <a
-      routerLink="/"
-      (click)="closeMobileMenu()"
-      class="mobile-link block py-2"
+  <div *ngIf="isMobileMenuOpen" class="md:hidden mobile-menu px-4 pt-4">
+    <a routerLink="/" (click)="closeMobileMenu()" class="mobile-link block py-2"
       >Home</a
     >
     <a
