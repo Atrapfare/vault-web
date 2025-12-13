@@ -37,10 +37,10 @@
           - 📄 [DecryptionFailedException.java](backend/src/main/java/vaultWeb/exceptions/DecryptionFailedException.java)
           - 📄 [DuplicateUsernameException.java](backend/src/main/java/vaultWeb/exceptions/DuplicateUsernameException.java)
           - 📄 [EncryptionFailedException.java](backend/src/main/java/vaultWeb/exceptions/EncryptionFailedException.java)
-          - 📄 [PollDoesNotBelongToGroupException.java](backend/src/main/java/vaultWeb/exceptions/PollDoesNotBelongToGroupException.java)
-          - 📄 [PollOptionNotFoundException.java](backend/src/main/java/vaultWeb/exceptions/PollOptionNotFoundException.java)
           - 📄 [GlobalExceptionHandler.java](backend/src/main/java/vaultWeb/exceptions/GlobalExceptionHandler.java)
           - 📄 [LastAdminException.java](backend/src/main/java/vaultWeb/exceptions/LastAdminException.java)
+          - 📄 [PollDoesNotBelongToGroupException.java](backend/src/main/java/vaultWeb/exceptions/PollDoesNotBelongToGroupException.java)
+          - 📄 [PollOptionNotFoundException.java](backend/src/main/java/vaultWeb/exceptions/PollOptionNotFoundException.java)
           - 📄 [UnauthorizedException.java](backend/src/main/java/vaultWeb/exceptions/UnauthorizedException.java)
           - 📁 **notfound**
             - 📄 [GroupNotFoundException.java](backend/src/main/java/vaultWeb/exceptions/notfound/GroupNotFoundException.java)
@@ -137,6 +137,7 @@
       - 📄 [auth.service.ts](frontend/src/app/services/auth.service.ts)
       - 📄 [cloud.service.ts](frontend/src/app/services/cloud.service.ts)
       - 📄 [private-chat.service.ts](frontend/src/app/services/private-chat.service.ts)
+      - 📄 [theme.service.ts](frontend/src/app/services/theme.service.ts)
       - 📄 [user.service.ts](frontend/src/app/services/user.service.ts)
       - 📄 [web-socket.service.ts](frontend/src/app/services/web-socket.service.ts)
   - 📁 **environments**
