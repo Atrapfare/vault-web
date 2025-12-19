@@ -92,8 +92,7 @@ export class DashboardComponent implements OnInit {
             ? error.error
             : error?.error?.message;
         this.passwordError =
-          serverMessage ||
-          'Update failed. Please try again.';
+          serverMessage || 'Update failed. Please try again.';
       },
     });
   }

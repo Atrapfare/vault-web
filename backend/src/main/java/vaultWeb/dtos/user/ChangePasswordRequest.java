@@ -14,7 +14,8 @@ public class ChangePasswordRequest {
   @NotBlank(message = "New password cannot be blank")
   @Size(min = 8, message = "Password must be at least 8 characters long")
   @Pattern(
-          regexp = "^(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z0-9]).*$",
-          message = "Password must contain at least one uppercase letter, one digit, and one special character")
+      regexp = "^(?=.*[A-Z])(?=.*\\d)(?=.*[^A-Za-z0-9]).*$",
+      message =
+          "Password must contain at least one uppercase letter, one digit, and one special character")
   private String newPassword;
 }
